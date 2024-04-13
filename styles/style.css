@@ -66,6 +66,9 @@ input[type]:checked ~ span.middle {
 .H2{
     color: #ddd;
     margin-top: -30px;
+    font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
    
 .card {
@@ -342,9 +345,13 @@ input[type]:checked ~ span.middle {
   top: 55px;
   background-color:#252525;
   min-height: 100vh;
-  min-width: 12%;
-  left: 88%;
+  min-width: 20%;
+  left: 80%;
   transition-duration: 0.1s;
+}
+li{
+  list-style:none;
+  color: #ddd;
 }
   
   
