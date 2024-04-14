@@ -8,133 +8,112 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Technology market</title>
 </head>
 <body>
     <header>
-      <nav>
         <label class="bar" for="check">
           <input type="checkbox" id="check">
-      
           <span class="top"></span>
           <span class="middle"></span>
           <span class="bottom"></span>
         </label>
-      <h2 class="H2">Technology market</h2>
-      </nav>
+      <h1 class="H2">Technology market</h1>
     </header>
-    <section>
+    <nav>
+      <i class='bx bxs-user'></i>
+        <h5 class="BF">Ingresar</h5>
+        <div class="inputBox_container">
+          <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
+            <path d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z">
+            </path>
+          </svg>
+          <input class="inputBox" name="buscador" id="buscador" type="text" placeholder="Buscar...">
+        </div>        
+      <div class="cr">
+       <h5 class="carrito1">Carrito<i class='bx bxs-cart' id="carrito-icono"></i></h5>
+        <div class="div_carrito" id="div_carrito">
+          <ul id="carrito">
+          </ul>
+            <button type="button" class="button" id="vaciar_carrito">
+              <span class="button__text">Vaciar Carrito</span>
+                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="512" viewBox="0 0 512 512" height="512" class="svg"><title></title><path style="fill:none;stroke:#323232;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" d="M112,112l20,320c.95,18.49,14.4,32,32,32H348c17.67,0,30.87-13.51,32-32l20-320"></path><line y2="112" y1="112" x2="432" x1="80" style="stroke:#323232;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"></line><path style="fill:none;stroke:#323232;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" d="M192,112V72h0a23.93,23.93,0,0,1,24-24h80a23.93,23.93,0,0,1,24,24h0v40"></path><line y2="400" y1="176" x2="256" x1="256" style="fill:none;stroke:#323232;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></line><line y2="400" y1="176" x2="192" x1="184" style="fill:none;stroke:#323232;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></line><line y2="400" y1="176" x2="320" x1="328" style="fill:none;stroke:#323232;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></line></svg></span></button>
+              <p class="C3">Total: $<span id="total" >0.00</span></p>
+          </div>
+          <h3></h3>
+      </div>  
+    </nav>
+    <section class="Ofl">
       <div class="container text-center">
-        <div class="row">
+        <div class="row align-items-start">
           <div class="col">
             <div class="card">
-              <div class="card-img"><img src="img/VPZ18_SQ1_0000000004_BLACK_SLf.jpeg" width="166px" alt=""></div>
+              <div class="card-img"><img src="img/ip13 white.webp" width="166px" alt=""></div>
               <div class="card-info">
-                <p class="text-title">Iphone 15 Pro Max</p>
-                <p class="text-body">256Gb - Black titanium</p>
+                <b>Iphone 13 Pro Max</b>
+                <p class="text-body">Product description and details</p>
               </div>
               <div class="card-footer">
-              <span class="text-title">$1.119</span>
-              <label class="ui-bookmark">
-                  <input type="checkbox" />
-                  <div class="bookmark">
-                    <svg
-                      viewBox="0 0 16 16"
-                      style="margin-top:4px"
-                      class="bi bi-heart-fill"
-                      height="25"
-                      width="25"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
-                        fill-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
+                <p class="precio" id="precio-producto-1">$870</p>
+                <button class="agregar" onclick="adquirir()"><i class='bx bxs-cart-add' style='color:black'></i></button>
             </div>
-          </div>
+           </div>
           </div>
           <div class="col">
             <div class="card">
               <div class="card-img"><img src="img/iphone 14.jpg" width="166px" alt=""></div>
               <div class="card-info">
-                <p class="text-title">Iphone 14</p>
-                <p class="text-body">256Gb - Sierra Blue</p>
+                <b>Iphone 14 Pro Max</b>
+                <p class="text-body">Product description and details</p>
               </div>
               <div class="card-footer">
-              <span class="text-title">$1.119</span>
-              <label class="ui-bookmark">
-                  <input type="checkbox" />
-                  <div class="bookmark">
-                    <svg
-                      viewBox="0 0 16 16"
-                      style="margin-top:4px"
-                      class="bi bi-heart-fill"
-                      height="25"
-                      width="25"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
-                        fill-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
+                <p class="precio" id="precio-producto-2">$930</p>
+                <button class="agregar" onclick="adquirir()"><i class='bx bxs-cart-add' style='color:black'></i></button>
             </div>
-          </div>
+           </div>
           </div>
           <div class="col">
             <div class="card">
-              <div class="card-img"><img src="img/ip13 white.webp" width="166px" alt=""></div>
+              <div class="card-img"><img src="img/VPZ18_SQ1_0000000004_BLACK_SLf.jpeg" width="166px" alt=""></div>
               <div class="card-info">
-                <p class="text-title">Iphone 13 Pro Max</p>
-                <p class="text-body">256Gb - White</p>
+                <b>Iphone 15 Pro Max</b>
+                <p class="text-body">Product description and details</p>
               </div>
               <div class="card-footer">
-              <span class="text-title">$1.119</span>
-              <label class="ui-bookmark">
-                  <input type="checkbox" />
-                  <div class="bookmark">
-                    <svg
-                      viewBox="0 0 16 16"
-                      style="margin-top:4px"
-                      class="bi bi-heart-fill"
-                      height="25"
-                      width="25"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
-                        fill-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </label>
+                <p class="precio" id="precio-producto-3">$1000</p>
+                <button class="agregar" onclick="adquirir()"><i class='bx bxs-cart-add' style='color:black'></i></button>
             </div>
-          </div>
+           </div>
           </div>
         </div>
       </div>
+    </section>
+    <section>
     <div class="modalnavbar" id="modal" style="visibility: hidden;">
-      <ul class="lista">
-        <li><a class="nitoputo" href="#">Inicio</a><i class='bx bxs-home' style='color:#ffffff' ></i></li>
-        <li><a class="nitoputo" href="#">Contacto</a><i class='bx bxs-contact' style='color:#ffffff'></i></li>
+      <ul >
+        <li class="LI"><a class="nitoputo" href="#">Inicio</a><i class='bx bxs-home' style='color:#ffffff' ></i></li>
+        <li class="LI"><a class="nitoputo" href="#">Contacto</a><i class='bx bxs-contact' style='color:#ffffff'></i></li>
         <details>
           <summary class="Products"><a class="nitoputo" href="#">Productos</a><i class='bx bxs-purchase-tag' style='color: #ffffff;'></i></summary>
-          <ul class="lista">
+          <ul>
             <li><a class="nitoputo" href="#">Celulares</a></li>
             <li><a class="nitoputo" href="#">Computadoras</a></li>
             <li><a class="nitoputo" href="#">Consolas</a></li>
+            <li><a class="nitoputo" href="#">Auriculares</a></li>
+            <li><a class="nitoputo" href="#">Smartwach</a></li>
+            <li><a class="nitoputo" href="#">Perifericos</a></li>
+            <li><a class="nitoputo" href="#">Componentes</a></li>
           </ul>
         </details>
       </ul>
-      <div>
-       <a href="#"><i class='bx bxl-instagram'></i></a>
-       <a href="#"><i class='bx bxl-youtube'></i></a>
-       <a href="#"><i class='bx bxl-discord-alt' style='color:#ffffff' ></i></a>
-       <a href="#"><i class='bx bxl-github' style='color:#ffffff' ></i></a>
+      <div class="redes">
+       <a class="Ig" href="#"><i class='bx bxl-instagram'></i></a>
+       <a class="Yt" href="https://www.youtube.com/channel/UCMlgytaPdZzjmJZAqRnbm1A"><i class='bx bxl-youtube'></i></a>
+       <a class="Dsc" href="#"><i class='bx bxl-discord-alt' ></i></a>
+       <a href="https://github.com/Ezegallardo0"><i class='bx bxl-github' style='color:#ffffff' ></i></a>
       </div>
     </div>
   </section>
