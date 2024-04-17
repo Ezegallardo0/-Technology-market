@@ -29,19 +29,27 @@ document.addEventListener("DOMContentLoaded", function () {
         let total = 0; // esta variable actúa como acumulador;
 
         carrito.forEach(function (producto, index) { // recorriendo los productos del carrito
+            const div= document.createElement("div")
+            div.style.display="flex"
+
             const li = document.createElement("li");
             li.textContent = producto.nombre + "-$" + producto.precio.toFixed(2);
             li.style.listStyle = "none";
+            li.style.color="#17171d";
 
-            const botonEliminar = document.createElement("button"); // creamos el botón eliminar
-            botonEliminar.textContent = "Eliminar";
+            const botonEliminar = document.getElementById("deletebutton"); // creamos el botón eliminar
+            botonEliminar.style.display ="flex";
             botonEliminar.style.marginLeft = "20%";
             botonEliminar.addEventListener("click", function () { // creamos la función para eliminar un solo producto
                 eliminarDelCarrito(index);
             });
 
+            div.appendChild(li);
+            div.appendChild(botonEliminar)
             li.appendChild(botonEliminar);
-            carritoElemento.appendChild(li);
+            carritoElemento.appendChild(div);
+            li.style.display = 'inline-block';
+            button.style.display = 'inline-block';
 
             total += producto.precio;
         });

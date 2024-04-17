@@ -1,8 +1,10 @@
+
 header{
   background-color: #17171d;
   height: 60px;
   width: 100%;
   margin-bottom: 50px;
+  
 }
 input[type = "checkbox"] {
   -webkit-appearance: none;
@@ -137,7 +139,7 @@ input[type]:checked ~ span.middle {
   margin-left: 8%;
   table-layout: fixed;
 }
-.button {
+.compra{
   --main-focus: #2d8cf0;
   --font-color: #323232;
   --bg-color-sub: #dedede;
@@ -159,17 +161,17 @@ input[type]:checked ~ span.middle {
   top: -11px;
 }
 
-.button, .button__icon, .button__text {
+.compra, .compra__icon, .button__text {
   transition: all 0.3s;
 }
 
-.button .button__text {
+.compra .button__text {
   transform: translateX(5px);
   color: var(--font-color);
   font-weight: 600;
 }
 
-.button .button__icon {
+.compra .compra__icon {
   position: absolute;
   transform: translateX(109px);
   height: 100%;
@@ -181,35 +183,42 @@ input[type]:checked ~ span.middle {
   left: 0px;
 }
 
-.button .svg {
+.compra .svg {
   width: 20px;
   fill: var(--main-color);
 }
 
-.button:hover {
+.compra:hover {
   background: var(--bg-color);
 }
 
-.button:hover .button__text {
+.compra:hover .button__text {
   color: transparent;
 }
 
-.button:hover .button__icon {
+.compra:hover .button__icon {
   width: 148px;
   transform: translateX(0);
 }
 
-.button:active {
+.compra:active {
   transform: translate(3px, 3px);
   box-shadow: 0px 0px var(--main-color);
 }
 .carrito1{
-  margin-left: 77%;         
+  display: flex;
+  -ms-flex-align: end;
   font-size: 25px;
+  justify-content: flex-end;
+  margin-right: 17%;
+}
+li{
+  color: #17171d;
 }
 .C3{
-  margin-top: -4px;
-  margin-left: 77%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 16%;
 }
 ul#carrito{
   padding-left: 77rem;
@@ -365,6 +374,7 @@ li{
   transition:0.2s;
   cursor:default;
   font-size: 60px;
+  transform: translateY(26%);
  }
  .Pd{
   text-decoration: none;
@@ -372,7 +382,39 @@ li{
   font-family: "Bitter", serif;
   font-size: 20px;
  }
- @media screen and (max-width:1000px) {
+ .bin-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 49px;
+  border-radius: 15px;
+  background-color: rgb(255, 95, 95);
+  cursor: pointer;
+  border: 3px solid rgb(255, 201, 201);
+  transition-duration: 0.3s;
+}
+.bin-bottom {
+  width: 15px;
+}
+.bin-top {
+  width: 17px;
+  transform-origin: right;
+  transition-duration: 0.3s;
+  margin-bottom: -3px;
+}
+.bin-button:hover .bin-top {
+  transform: rotate(45deg);
+}
+.bin-button:hover {
+  background-color: rgb(255, 0, 0);
+}
+.bin-button:active {
+  transform: scale(0.9);
+}
+
+ @media screen and (max-width:900px) {
   .inputBox_container{
     max-width: 50%;
     position: absolute;
@@ -407,9 +449,5 @@ li{
   }
   .redes{
     font-size: 20px;
-  }
-  .Products{
-    
-    
   }
  }
