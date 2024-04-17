@@ -81,7 +81,6 @@ input[type]:checked ~ span.middle {
   top: 55px; 
   min-width: 20%;
   left: 80%;
-  transition-duration: 0.1s;
   max-height: 100%;
   text-transform: uppercase;
   padding: 0.4rem 0.8rem;
@@ -97,8 +96,9 @@ input[type]:checked ~ span.middle {
   background-color: #17171d;
   color: #fff;
   cursor: pointer;
-  
+  transition: 0.1s;  
 }
+
 .Products{
   width: 180px;
   color: #ddd;
@@ -133,8 +133,9 @@ input[type]:checked ~ span.middle {
   color: rgb(80, 80, 197);
 }
 .Ofl{
-  margin-top: 100px;
+  margin-top: 62px;
   margin-left: 8%;
+  table-layout: fixed;
 }
 .button {
   --main-focus: #2d8cf0;
@@ -353,4 +354,62 @@ li{
   background-color: green;
   border-radius: 9px;
   font-size: 15px;
+ }
+ .Ofs{
+  margin-left: 15%;
+  margin-top: 45px;
+  font-family: "Bitter", serif;
+ }
+ .Ofs:hover{
+  color: #86b3e2;
+  transition:0.2s;
+  cursor:default;
+  font-size: 60px;
+ }
+ .Pd{
+  text-decoration: none;
+  color: cadetblue;
+  font-family: "Bitter", serif;
+  font-size: 20px;
+ }
+ @media screen and (max-width:1000px) {
+  .inputBox_container{
+    max-width: 50%;
+    position: absolute;
+    margin-left: 65px;
+  }
+  .Ingresar{
+    margin-left: -139px;
+  }
+  .cr{
+    margin-top: 30px;
+    margin-right: 551px;
+  }
+  .H2{
+    padding-right: 50%;
+  }
+  .menu{
+    margin-right: 41px;
+  }
+  header{
+    background-color: #17171d ;
+    width: auto;
+    height: auto;
+  }
+  .modalnavbar{
+    min-width: 51%;
+    left: 118px;
+    margin-top: 19px;
+  }
+  .nitoputo{
+    font-size: 18px;
+    margin-left: -42px;
+  }
+  .redes{
+    font-size: 20px;
+  }
+  .Products{
+    
+    
+  }
  }
